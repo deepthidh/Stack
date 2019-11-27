@@ -74,3 +74,13 @@ else
 	return stk;
 
 }
+void stack_display(Stack *stk)
+{
+		
+	while(stk->top!=-1)
+	{
+		
+		printf("%f\n", stk->data[stk->top]);
+		--stk->top;
+	}
+}
